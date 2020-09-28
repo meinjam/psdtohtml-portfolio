@@ -1,0 +1,492 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+.btn,
+.btn:hover {
+    color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.navbar {
+    transition: all 300ms linear;
+}
+
+.aaa {
+    padding-top: 30px;
+}
+
+nav h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav ul li a {
+    color: #fff !important;
+}
+
+.navbar-nav li a {
+    font-size: 1.15rem;
+    padding-left: 1.5rem !important;
+}
+
+#showcase {
+    background: linear-gradient(to right,
+            rgba(122, 57, 219, 0.6),
+            rgba(96, 72, 255, 0.6)),
+        url('../img/cover.jpg') no-repeat top center/cover fixed;
+    /* url('../4.jpg') no-repeat top center/cover fixed; */
+    min-height: 100vh;
+    /* clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%) */
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+    border: none !important;
+    /* border: 1px solid #f64c72;
+    border-radius: 0px; */
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: rgba(246, 76, 114, 0.6);
+    }
+
+    .navbar-nav li a {
+        margin: 3rem !important;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    nav h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.white-nav-top {
+    background: #fff;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top ul li a {
+    color: #212226 !important;
+}
+
+.white-nav-top ul li a:hover,
+.white-nav-top ul li a:focus {
+    color: #A0D334 !important;
+}
+
+.white-nav-top ul li #cbutton:hover,
+.white-nav-top ul li #cbutton:focus {
+    color: #A0D334 !important;
+}
+
+.white-nav-top ul li .active {
+    color: #A0D334 !important;
+}
+
+.navbar ul li .active {
+    color: #A0D334 !important;
+}
+
+/* Showcase */
+nav #cbutton:hover {
+    color: #A0D334;
+}
+
+#showcase h1 {
+    font-weight: bold;
+    font-size: 70px;
+    color: #fff;
+}
+
+#showcase p {
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 767px) {
+    #showcase .hideeee {
+        display: none;
+    }
+}
+
+#showcase p {
+    font-size: 1.3rem;
+}
+
+/* Services */
+#service {
+    padding: 80px 0;
+}
+
+#service h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#service p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/* Story */
+#story {
+    background: linear-gradient(to right,
+            rgba(122, 57, 219, 0.6),
+            rgba(96, 72, 255, 0.6)),
+        url('../img/cover2.jpg') no-repeat top center/cover fixed;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+    min-height: 100vh;
+}
+
+#story .fa-play {
+    color: #A0D334;
+    background: #fff;
+    font-size: 3rem;
+    padding-left: 2.4rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#story h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 34px;
+}
+
+/* Skill */
+#skill {
+    padding: 90px 0;
+}
+
+#skill h1 {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#skill p {
+    font-size: 14px;
+}
+
+#skill span {
+    font-size: 18px;
+}
+
+#skill .skill1,
+#skill .skill2,
+#skill .skill3,
+#skill .skill4,
+#skill .skill5 {
+    position: relative;
+}
+
+#skill .skill1percent,
+#skill .skill2percent,
+#skill .skill3percent,
+#skill .skill4percent,
+#skill .skill5percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 80px 0;
+    background: linear-gradient(to right, #f7f7f7, #f7f7f7);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    /* min-height: 200vh; */
+}
+
+#portfolio h1 {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#portfolio p {
+    font-size: 14px;
+}
+
+#portfolio .port p {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+    display: inline-block;
+}
+
+#portfolio .port p:hover {
+    color: #A0D334;
+}
+
+#portfolio .port p::after {
+    display: block;
+    height: 2px;
+    background-color: #A0D334;
+    width: 100px;
+    padding: 10px;
+}
+
+#portfolio button {
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    font-weight: bold;
+}
+
+
+#portfolio .rowsss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*auto auto auto;*/
+    grid-gap: 1fr;
+    /* grid-auto-flow: dense; */
+}
+
+#portfolio .rowsss>*:nth-child(1) {
+    /* grid-column-start: span 2;
+    grid-row-start: span 1; */
+    grid-column: span 1 / auto;
+}
+
+/* .image-rows {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col-image {
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+    padding: 0 4px;
+    height: 100%;
+}*/
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 550px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+#portfolio .mixitup-control-active{
+    color: #A0D334;
+}
+
+/* Review */
+#review {
+    padding: 80px 0;
+}
+
+#review h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#review h5 {
+    font-size: 18px;
+}
+
+#review p {
+    font-size: 14px;
+}
+
+#review span {
+    font-size: 16px;
+}
+
+/* Hire */
+#hire {
+    background-color: #f7f7f7;
+    padding: 80px;
+}
+
+#hire h2 {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+#hire button {
+    float: right;
+}
+
+@media only screen and (max-width: 991px) {
+    #hire button {
+        float: left;
+    }
+}
+
+/* Contact */
+#contact {
+    padding: 80px;
+}
+
+#contact,
+#contact h4 {
+    background: linear-gradient(to right, #7A39DB, #6048FF);
+    color: #fff;
+}
+
+#contact h3 {
+    color: #A0D334;
+    font-size: 33px;
+}
+
+#contact h5 {
+    color: #fff;
+    font-size: 24px;
+}
+
+#contact .conone p {
+    font-size: 16px;
+}
+
+#contact #contow {
+    padding-left: 8rem;
+}
+
+#contact .psudo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact .psudo a:hover{
+    color: #A0D334;
+    transition: all 0.4s;
+}
+
+#contact #confour {
+    padding-left: 7rem;
+}
+
+#contact #conthree {
+    padding-left: 8rem;
+}
+
+#contact i:hover {
+    color: #A0D334;
+}
+
+@media only screen and (max-width: 1000px) {
+    #contact #contow {
+        padding-left: 15px;
+    }
+
+    #contact #confour {
+        padding-left: 15px;
+    }
+
+    #contact #conthree {
+        padding-left: 15px;
+    }
+}
+
+#contact .last h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#contact .last p {
+    font-size: 16px;
+}
+
+#contact .last i {
+    padding: .8rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+#contact .last .map {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+#contact .hr {
+    padding: 1px;
+    background-color: #fff;
+}
+
+/* Extra */
+.white-nav-top #cbutton {
+    color: #fff;
+    background-color: #A0D334;
+}
+
+.white-nav-top #cbutton:hover {
+    color: #fff;
+}
+
+/* Owl Carousel */
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #a1d3344f !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 50px 5px auto;
+}
+
+.owl-dot.active {
+    background-color: #A0D334 !important;
+}
