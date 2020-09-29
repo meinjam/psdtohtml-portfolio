@@ -31,6 +31,7 @@ $(document).ready(function () {
     };
 });
 
+//Progressbar
 $('.skill1').circleProgress({
     value: .75,
     size: 150,
@@ -98,7 +99,7 @@ $('.skill5').circleProgress({
     $(this).find('.skill5percent').html(Math.round(85 * progress) + '<i>%</i>');
 });
 
-// Owl Carousel
+// Testemonial Carousel
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
@@ -133,18 +134,25 @@ $(function () {
 
 // Portfolio filter
 $(document).ready(function () {
-    let mixer = mixitup('#gallery')
-})
 
-// $(function () {
-//     var selectedClass = "";
-//     $(".filter").click(function () {
-//         selectedClass = $(this).attr("data-rel");
-//         $("#gallery").fadeTo(100, 0.1);
-//         $("#gallery div").not("." + selectedClass).fadeOut().removeClass('animation');
-//         setTimeout(function () {
-//             $("." + selectedClass).fadeIn().addClass('animation');
-//             $("#gallery").fadeTo(300, 1);
-//         }, 300);
-//     });
-// });
+    // init Isotope
+    var $grid = $('#gallery-jjj').isotope({
+        itemSelector: '.mix',
+    });
+    // filter items on button click
+    $('#filter-button').on('click', 'p', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
+    //Active class
+    $('#filter-button').each(function (i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'p', function () {
+            $buttonGroup.find('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+
+})

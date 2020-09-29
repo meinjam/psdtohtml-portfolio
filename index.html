@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/player/uikit.min.css">
     <link rel="stylesheet" href="assets/owl/owl.carousel.css">
     <link rel="stylesheet" href="assets/owl/owl.theme.default.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
@@ -24,12 +24,12 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars" style="color:#f64c72; font-size:28px;"></i>
+                    <i class="fas fa-bars" style="color:#A0D334; font-size:28px;"></i>
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item ml-5">
+                    <li class="nav-item ml-5" id="mar-off">
                         <a href="#showcase" class="nav-link smooth-scroll">Home</a>
                     </li>
                     <li class="nav-item">
@@ -211,74 +211,75 @@
                 </div>
             </div>
             <div class="row mt-4 mb-5 port">
-                <div class="text-center mx-auto">
-                    <button type="button" class="px-3" data-filter="all">All</button>
-                    <button type="button" class="px-3" data-filter=".web">Web Design</button>
-                    <button type="button" class="px-3" data-filter=".app">App Design</button>
-                    <button type="button" class="px-3" data-filter=".photo">Photography</button>
-                    <button type="button" class="px-3" data-filter=".deve">Web Development</button>
+                <div class="text-center mx-auto" id="filter-button">
+                    <p class="px-3 active" data-filter="*" style="">All</>
+                    <p class="px-3" data-filter=".web">Web Design</p>
+                    <p class="px-3" data-filter=".app">App Design</p>
+                    <p class="px-3" data-filter=".photo">Photography</p>
+                    <p class="px-3" data-filter=".deve">Web Development</p>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="gallery" id="gallery">
+        <div class="container filter-container" id="filtarable">
+            <div class="gallery row" id="gallery-jjj">
     
-                
-    
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1 mix web app">
-                    <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"
-                        alt="Card image cap"> -->
-                    <img src="img/w1.png" alt="">
+                <div class="col-sm-4 mb-3 text-center mix">
+                    <img src="img/w1.png" class="img-fluid">
                 </div>
-                <!-- Grid column -->
     
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 2 mix app photo">
-                    <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                        alt="Card image cap"> -->
+                <div class="col-sm-4 mb-3 text-center mix">
                     <img src="img/w2.png" alt="">
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 2 mix photo deve">
-                    <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-                        alt="Card image cap"> -->
+                <div class="col-sm-4 mb-3 text-center mix">
                     <img src="img/w3.png" alt="">
                 </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1 mix app photo">
-                    <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg"
-                        alt="Card image cap"> -->
+                <div class="col-sm-4 mb-3 text-center mix app photo">
                     <img src="img/w4.png" alt="">
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1 mix web deve">
-                    <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg"
-                        alt="Card image cap"> -->
+                <div class="col-sm-4 mb-3 text-center mix web deve">
                     <img src="img/w5.png" alt="">
                 </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all mix deve web">
-                    <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                        alt="Card image cap"> -->
+                <div class="col-sm-4 mb-3 text-center mix deve web">
                     <img src="img/w6.jpg" alt="">
                 </div>
-                <!-- Grid column -->
-    
                 
     
             </div>
 
         </div>
+
+        <!-- <div class="container" id="filtarable">
+
+            <div class="row" id="gallery">
+
+                <div class="col-sm-12">
+                    <img src="img/w1.png" class="img-fluid mb-4">
+                </div>
+
+                <div class="col-sm-12">
+                    <img src="img/w2.png" class="img-fluid mb-4">
+                </div>
+
+                <div class="col-sm-12">
+                    <img src="img/w3.png" class="img-fluid mb-4">
+                </div>
+
+                <div class="col-sm-12">
+                    <img src="img/w4.png" class="img-fluid mb-4">
+                </div>
+
+                <div class="col-sm-12">
+                    <img src="img/w5.png" class="img-fluid mb-4">
+                </div>
+                
+                <div class="col-sm-12">
+                    <img src="img/w6.jpg" class="img-fluid mb-4">
+                </div>
+
+            </div>
+
+        </div> -->
 
 
     </section>
@@ -451,10 +452,10 @@
     <section id="hire" class="">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10">
+                <div class="col-xl-10">
                     <h2>I am available for new projects. Want to work with me?</h2>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-xl-2 mt-1">
                     <button class="btn btn-primary btn-lg px-5 py-3">Hire Me</button>
                 </div>
             </div>
@@ -465,7 +466,7 @@
     <section id="contact" class="">
         <div class="container">
             <div class="row psudo">
-                <div class="col-md-3 mt-4" id="conone">
+                <div class="col-sm-6 col-lg-3 mt-4" id="conone">
                     <h3>Mark Antony</h3>
                     <p class="mt-4">Subscribe Newsletter</p>
                     <form action="" method="">
@@ -476,7 +477,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-3 mt-4" id="contow">
+                <div class="col-sm-6 col-lg-3 mt-4" id="contow">
                     <h5>Services</h5>
                     <p class="mt-4"><a href="#">Web Design</a></p>
                     <p><a href="#">App Design</a></p>
@@ -484,7 +485,7 @@
                     <p><a href="#">Videography</a></p>
                     <p><a href="#">Web Development</a></p>
                 </div>
-                <div class="col-md-3 mt-4" id="conthree">
+                <div class="col-sm-6 col-lg-3 mt-4" id="conthree">
                     <h5>Support</h5>
                     <p class="mt-4"><a href="#">Get Support</a></p>
                     <p><a href="#">Contact</a></p>
@@ -492,7 +493,7 @@
                     <p><a href="#">Privacy Policy</a></p>
                     <p><a href="#">Pricing</a></p>
                 </div>
-                <div class="col-md-3 mt-4" id="confour">
+                <div class="col-sm-6 col-lg-3 mt-4" id="confour">
                     <h5>Follow Me</h5>
                     <p class="mt-4">
                         <a href="#"><i class="fab fa-facebook fa-2x mr-3"></i></a> 
@@ -506,7 +507,7 @@
             <div class="hr mb-5 mt-4"></div>
 
             <div class="row">
-                <div class="col-md-4 d-flex last">
+                <div class="col-lg-4 mb-3 d-flex last">
                     <div>
                         <i class="fas fa-phone fa-2x mr-2"></i>
                     </div>
@@ -515,7 +516,7 @@
                         <p>Manager - (555) 652- 3567</p>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex last">
+                <div class="col-lg-4 mb-3 d-flex last">
                     <div>
                         <i class="fas fa-envelope fa-2x mr-2"></i>
                     </div>
@@ -524,7 +525,7 @@
                         <p>info@modonkumer.com</p>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex last">
+                <div class="col-lg-4 mb-3 d-flex last">
                     <div>
                         <i class="fas fa-map-marker-alt fa-2x mr-2 map"></i>
                     </div>
@@ -546,8 +547,9 @@
     <script src="assets/js/circle-progress.js"></script>
     <script src="assets/owl/owl.carousel.js"></script>
     <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/mixitup.min.js"></script>
-    <script src="app.js"></script>
+    <!-- <script src="assets/js/mixitup.min.js"></script> -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
