@@ -33,6 +33,10 @@ nav ul li a {
     color: #fff !important;
 }
 
+.navbar .navbar-nav li {
+    margin: 0 8px;
+}
+
 .navbar-nav li a {
     font-size: 1.15rem;
     /* padding-left: 1.5rem !important; */
@@ -54,6 +58,8 @@ nav ul li a {
     border: none !important;
     /* border: 1px solid #f64c72;
     border-radius: 0px; */
+    outline: none;
+    padding-top: 9px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -72,6 +78,10 @@ nav ul li a {
     .navbar-nav li a {
         margin: 0.3rem !important;
         font-size: 1.5rem;
+    }
+
+    .navbar .navbar-brand h1 {
+        font-size: 2rem;
     }
 }
 
@@ -148,6 +158,14 @@ nav #cbutton:hover {
     color: #555;
     font-size: 14px;
     margin-top: 12px;
+}
+
+#service .shadow {
+    transition: all .5s;
+}
+
+#service .shadow:hover {
+    transform: translateY(-5px);
 }
 
 /* Story */
